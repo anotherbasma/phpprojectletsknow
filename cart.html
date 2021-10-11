@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="css/lib/all.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
 
-
     <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&display=swap"
         rel="stylesheet">
 
@@ -30,7 +29,7 @@
     <title>PHP ECOMMERCE</title>
 </head>
 
-<body class="handheld-toolbar-enabled">
+<body>
 
 
     <!--start nav-->
@@ -94,7 +93,7 @@
                                 <div class="dropdown-menu" aria-labelledby="userDropdown">
                                     <div class="profile-name">
                                         <div class="image-content">
-                                            <img src="images/profile_man.png" alt="">
+                                            <img src="images/about/profile_man.png" alt="">
                                         </div>
                                         <div class="content">
                                             <a href="profile.html">Jacob Smith</a>
@@ -231,189 +230,124 @@
             </div>
         </div>
     </nav>
-    <!-- end Nav -->
+    <main>
+        <!--Start cart-pg -->
+        <section class="cart-pg">
+            <div class="container">
+                <div class="table-responsive">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th class="text-center"> Picture</th>
+                                <th class="text-center">Product</th>
+                                <th class="text-center">Details</th>
+                                <th class="text-center">Number</th>
+                                <th class="text-center">Total</th>
+                                <th class="text-center">Delete</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="text-center">
+                                    <a href="#">
+                                        <img src="images/product/66.jpg" alt="" class="img-thumbnail">
+                                    </a>
+                                </td>
+                                <td class="text-center">Product Name </td>
+                                <td class="text-center">More Details For this Product</td>
+                                <td class="text-center">
+                                    <form>
+                                        <div class="quantity-container">
+                                            <div class="add-more">
+                                                <span class="qt-minus"><i class="fas fa-minus"></i></span>
+                                                <span class="qt">1</span>
+                                                <span class="qt-plus"><i class="fas fa-plus"></i></span>
 
+                                            </div>
+                                        </div>
+                                    </form>
+                                </td>
+                                <td class="text-center">$122.00</td>
+                                <td>
+                                    <a href="#">
+                                        <i class="far fa-trash-alt"></i>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">
+                                    <a href="#">
+                                        <img src="images/product/69.jpg" alt="" class="img-thumbnail">
+                                    </a>
+                                </td>
+                                <td class="text-center">Product Name</td>
+                                <td class="text-center">More Details For this Product</td>
+                                <td class="text-center">
+                                    <form>
+                                        <div class="quantity-container">
+                                            <div class="add-more">
+                                                <span class="qt-minus"><i class="fas fa-minus"></i></span>
+                                                <span class="qt">1</span>
+                                                <span class="qt-plus"><i class="fas fa-plus"></i></span>
 
-    <main class="container-fluid px-0">
-        <!-- Row: Shop online-->
-        <section class="row g-0">
-            <div class="col-md-6 bg-position-center bg-size-cover bg-secondary"
-                style="min-height: 15rem; background-image: url(img/about/01.jpg);"></div>
-            <div class="col-md-6 px-3 px-md-5 py-5">
-                <div class="mx-auto py-lg-5" style="max-width: 35rem;">
-                    <h2 class="h3 pb-3">Search, Select, Buy online</h2>
-                    <p class="fs-sm pb-3 text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Aliquam id purus at risus pellentesque faucibus a quis eros. In eu fermentum leo. Integer ut
-                        eros lacus. Proin ut accumsan leo. Morbi vitae est eget dolor consequat aliquam eget quis
-                        dolor. Mauris rutrum fermentum erat, at euismod lorem pharetra nec. Duis erat lectus,
-                        ultrices euismod sagittis at, pharetra eu nisl. Phasellus id ante at velit tincidunt
-                        hendrerit. Aenean dolor dolor tristique nec. Tristique nulla aliquet enim tortor at auctor
-                        urna nunc. Sit amet aliquam id diam maecenas ultricies mi eget.</p><a
-                        class="btn btn-primary btn-shadow" href="shop-grid-ls.html">View products</a>
-                </div>
-            </div>
-        </section>
-        <!-- Row: Delivery-->
-        <section class="row g-0">
-            <div class="col-md-6 bg-position-center bg-size-cover bg-secondary order-md-2"
-                style="min-height: 15rem; background-image: url(img/about/02.jpg);"></div>
-            <div class="col-md-6 px-3 px-md-5 py-5 order-md-1">
-                <div class="mx-auto py-lg-5" style="max-width: 35rem;">
-                    <h2 class="h3 pb-3">Fast delivery worldwide</h2>
-                    <p class="fs-sm pb-3 text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Aliquam id purus at risus pellentesque faucibus a quis eros. In eu fermentum leo. Integer ut
-                        eros lacus. Proin ut accumsan leo. Morbi vitae est eget dolor consequat aliquam eget quis
-                        dolor. Mauris rutrum fermentum erat, at euismod lorem pharetra nec. Duis erat lectus,
-                        ultrices euismod sagittis at, pharetra eu nisl. Phasellus id ante at velit tincidunt
-                        hendrerit. Aenean dolor dolor tristique nec. Tristique nulla aliquet enim tortor at auctor
-                        urna nunc. Sit amet aliquam id diam maecenas ultricies mi eget.</p><a
-                        class="btn btn-accent btn-shadow" href="#">Shipping details</a>
-                </div>
-            </div>
-        </section>
-        <!-- Row: Mobile app-->
-        <section class="row g-0">
-            <div class="col-md-6 bg-position-center bg-size-cover bg-secondary"
-                style="min-height: 15rem; background-image: url(im/about/03.jpg);"></div>
-            <div class="col-md-6 px-3 px-md-5 py-5">
-                <div class="mx-auto py-lg-5" style="max-width: 35rem;">
-                    <h2 class="h3 pb-3">Great mobile app. Shop on the go</h2>
-                    <p class="fs-sm pb-3 text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Aliquam id purus at risus pellentesque faucibus a quis eros. In eu fermentum leo. Integer ut
-                        eros lacus. Proin ut accumsan leo. Morbi vitae est eget dolor consequat aliquam eget quis
-                        dolor. Mauris rutrum fermentum erat, at euismod. Duis erat lectus, ultrices euismod sagittis
-                        at dolor tristique nec. Tristique nulla aliquet enim tortor at auctor urna nunc. Sit amet
-                        aliquam id diam maecenas ultricies mi eget.</p>
-                    <img src="images/about/google.png" alt="">
-                    <img src="images/about/google.png" alt="">
+                                            </div>
+                                        </div>
+                                    </form>
+                                </td>
+                                <td class="text-center">$122.00</td>
+                                <td>
+                                    <a href="#">
+                                        <i class="far fa-trash-alt"></i>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">
+                                    <a href="#">
+                                        <img src="images/product/67.jpg" alt="" class="img-thumbnail">
+                                    </a>
+                                </td>
+                                <td class="text-center"> Product Name </td>
+                                <td class="text-center">More Details For this Product</td>
+                                <td class="text-center">
+                                    <form>
+                                        <div class="quantity-container">
+                                            <div class="add-more">
+                                                <span class="qt-minus"><i class="fas fa-minus"></i></span>
+                                                <span class="qt">1</span>
+                                                <span class="qt-plus"><i class="fas fa-plus"></i></span>
 
+                                            </div>
+                                        </div>
+                                    </form>
+                                </td>
+                                <td class="text-center">$122.00</td>
+                                <td>
+                                    <a href="#">
+                                        <i class="far fa-trash-alt"></i>
+                                    </a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
-            </div>
-        </section>
-        <!-- Section: Shopping outlets-->
-        <section class="row g-0">
-            <div class="col-md-6 bg-position-center bg-size-cover bg-secondary order-md-2"
-                style="min-height: 15rem; background-image: url(img/about/04.jpg);"></div>
-            <div class="col-md-6 px-3 px-md-5 py-5 order-md-1">
-                <div class="mx-auto py-lg-5" style="max-width: 35rem;">
-                    <h2 class="h3 pb-3">Shop offline. Cozy outlet stores</h2>
-                    <p class="fs-sm pb-3 text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Aliquam id purus at risus pellentesque faucibus a quis eros. In eu fermentum leo. Integer ut
-                        eros lacus. Proin ut accumsan leo. Morbi vitae est eget dolor consequat aliquam eget quis
-                        dolor. Mauris rutrum fermentum erat, at euismod lorem pharetra nec. Duis erat lectus,
-                        ultrices euismod sagittis at, pharetra eu nisl. Phasellus id ante at velit tincidunt
-                        hendrerit. Aenean dolor dolor tristique nec. Tristique nulla aliquet enim tortor at auctor
-                        urna nunc. Sit amet aliquam id diam maecenas ultricies mi eget.</p><a
-                        class="btn btn-warning btn-shadow needs-validation1" href="contacts.html">See outlet stores</a>
-                </div>
-            </div>
-        </section>
-        <hr>
-        <!-- Section: Team-->
-        <section class="container py-3 py-lg-5 mt-4 mb-3">
-            <h2 class="h3 my-2">Our core team</h2>
-            <p class="fs-sm text-muted">People behind your great shopping experience</p>
-            <div class="row pt-3">
-                <div class="col-lg-4 col-sm-6 mb-grid-gutter">
-                    <div class="d-flex align-items-center"><img class="rounded-circle" src="images/about/01(2).jpg"
-                            width="96" alt="Jonathan Doe">
-                        <div class="ps-3">
-                            <h6 class="fs-base pt-1 mb-1">Jonathan Doe</h6>
-                            <p class="fs-ms text-muted mb-0">CEO, Co-founder</p><a
-                                class="nav-link-style fs-ms text-nowrap" href="mailto:johndoe@example.com"><i
-                                    class="fas fa-envelope me-2"></i>johndoe@example.com</a>
+                <div class="row">
+                    <div class="col-md-8 m-auto">
+                        <div class="cart-summary">
+                            <h6>Total : <span>$366.00</span></h6>
+                            <p>Shipping And Taxes Will be taked at payment .</p>
+                            <div class="links">
+                                <a href="products.html">Continue Shopping </a>
+                                <a href="cart.html">Renewing Cart</a>
+                                <a href="checkout.html">Payment Now</a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-4 col-sm-6 mb-grid-gutter">
-                    <div class="d-flex align-items-center"><img class="rounded-circle" src="images/about/02(2).jpg"
-                            width="96" alt="Barbara Palson">
-                        <div class="ps-3">
-                            <h6 class="fs-base pt-1 mb-1">Barbara Palson</h6>
-                            <p class="fs-ms text-muted mb-0">Chief of Marketing</p><a
-                                class="nav-link-style fs-ms text-nowrap" href="mailto:b.palson@example.com"><i
-                                    class="fas fa-envelope me-2"></i>b.palson@example.com</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-sm-6 mb-grid-gutter">
-                    <div class="d-flex align-items-center"><img class="rounded-circle" src="images/about/03(2).jpg"
-                            width="96" alt="William Smith">
-                        <div class="ps-3">
-                            <h6 class="fs-base pt-1 mb-1">William Smith</h6>
-                            <p class="fs-ms text-muted mb-0">Financial director</p><a
-                                class="nav-link-style fs-ms text-nowrap" href="mailto:w.smith@example.com"><i
-                                    class="fas fa-envelope me-2"></i>w.smith@example.com</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-sm-6 mb-grid-gutter">
-                    <div class="d-flex align-items-center"><img class="rounded-circle" src="images/about/04(2).jpg"
-                            width="96" alt="Amanda Gallaher">
-                        <div class="ps-3">
-                            <h6 class="fs-base pt-1 mb-1">Amanda Gallaher</h6>
-                            <p class="fs-ms text-muted mb-0">Lead UX designer</p><a
-                                class="nav-link-style fs-ms text-nowrap" href="mailto:a.gallaher@example.com"><i
-                                    class="fas fa-envelope me-2"></i>a.gallaher@example.com</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-sm-6 mb-grid-gutter">
-                    <div class="d-flex align-items-center"><img class="rounded-circle" src="images/about/07.jpg"
-                            width="96" alt="Benjamin Miller">
-                        <div class="ps-3">
-                            <h6 class="fs-base pt-1 mb-1">Benjamin Miller</h6>
-                            <p class="fs-ms text-muted mb-0">Website development</p><a
-                                class="nav-link-style fs-ms text-nowrap" href="mailto:b.miller@example.com"><i
-                                    class="fas fa-envelope me-2"></i>b.miller@example.com</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-sm-6 mb-grid-gutter">
-                    <div class="d-flex align-items-center"><img class="rounded-circle" src="images/about/06(1).jpg"
-                            width="96" alt="Miguel Rodrigez">
-                        <div class="ps-3">
-                            <h6 class="fs-base pt-1 mb-1">Miguel Rodrigez</h6>
-                            <p class="fs-ms text-muted mb-0">Content manager</p><a
-                                class="nav-link-style fs-ms text-nowrap" href="mailto:b.miller@example.com"><i
-                                    class="fas fa-envelope me-2"></i>m.rodrigez@example.com</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Section: We are hiring-->
-        <hr>
-        <section class="row g-0">
-            <div class="col-md-6 bg-position-center bg-size-cover bg-secondary order-md-2"
-                style="min-height: 15rem; background-image: url(img/about/05.jpg);"></div>
-            <div class="col-md-6 px-3 px-md-5 py-5 order-md-1">
-                <div class="mx-auto py-lg-5" style="max-width: 35rem;">
-                    <h2 class="h3 mb-2">We are hiring new talents</h2>
-                    <p class="fs-sm text-muted pb-2">If you want to be part of our team please submit you CV using
-                        the form below:</p>
-                    <form class="needs-validation row g-4" method="post" novalidate>
-                        <div class="col-sm-6">
-                            <input class="form-control" type="text" placeholder="Your name" required>
-                        </div>
-                        <div class="col-sm-6">
-                            <input class="form-control" type="email" placeholder="Your email" required>
-                        </div>
-                        <div class="col-12">
-                            <textarea class="form-control" rows="4" placeholder="Message" required></textarea>
-                        </div>
-                        <div class="col-12">
-                            <input class="form-control file" type="file" required>
-                        </div>
-                        <div class="col-12">
-                            <button class="btn btn-info btn-shadow" type="submit">Submit your CV</button>
-                        </div>
-                    </form>
                 </div>
             </div>
         </section>
     </main>
-    </main>
+    <!--end main-->
     <!--Scroll to top button-->
     <a data-scroll href="#" class="scroll-top-btn" id="scroll-btn">
         <i class="fas fa-chevron-up"></i>
@@ -564,7 +498,24 @@
     <script src="js/lib/flipdown.js"></script>
     <script src="js/main.js"></script>
 
+    <script>
+        // ------------ increase products -----------
+        $(".qt-plus").click(function () {
+            $(this).parent().children(".qt").html(parseInt($(this).parent().children(".qt").html()) + 1);
+        });
 
+        $(".qt-minus").click(function () {
+
+            child = $(this).parent().children(".qt");
+
+            if (parseInt(child.html()) > 1) {
+                child.html(parseInt(child.html()) - 1);
+            }
+
+            $(this).parent().children(".full-price").addClass("minused");
+
+        });
+    </script>
 </body>
 
 </html>
